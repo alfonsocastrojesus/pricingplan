@@ -202,6 +202,7 @@ body {
 }
 .pricing-button:hover {
   background-color: lightblue;
+  transition: background-color 200ms ease-in-out;
 }
 .is-featured {
   border: none;
@@ -210,4 +211,22 @@ body {
 }
 .is-featured:hover {
   background-color: #1877f2;
+}
+@media (min-width: 768px) {
+  .panel {
+    display: flex;
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border: none;
+  }
+  .pricing-features-item {
+    border: none;
+  }
+  .pricing-plan {
+    border-right: 1px lightblue solid;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
 }
